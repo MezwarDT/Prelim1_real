@@ -23,6 +23,25 @@ def part_1(size: int):
     tail = []
     ### YOUR CODE GOES HERE ###
 
+    size = 3
+    largeur = size*2 
+    base = size
+    hauteur_totale = size*2 + 1
+    hauteur_haut = size + 1
+    hauteur_bas = size
+    
+    pattern = "|"
+    
+    for i in range(largeur-1):
+        pattern = pattern + "_."
 
-
+    pattern = pattern + "_" + "|"       
+    
+    for i in range(hauteur_haut):
+        tail.append(pattern)    
+    
+    
+    
+    print(tail)
     return tail
+part_1(3)
