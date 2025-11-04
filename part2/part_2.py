@@ -4,6 +4,7 @@
 This is the template file for the part 2 of the Prelim 1.
 Ceci est le fichier template pour la partie 2 du Prelim 1.
 """
+pi = 3.1415926535
 
 def part_2(w: int, h: int, l: int, a: int):
     """
@@ -25,7 +26,10 @@ def part_2(w: int, h: int, l: int, a: int):
     hauteur = h/2
     longueur = l/2
     pourcentage = a/10
-    
-    milk = largeur * hauteur * longueur * pourcentage * 1/2
-
-    return milk
+    volume = largeur * hauteur * longueur *4/3 *pi
+    volume = volume/2
+    milk = pourcentage * volume
+    round(milk , 2)
+    print(milk)
+    return round(milk,2)
+print(part_2(w = 10, h = 14, l = 50, a = 4))
